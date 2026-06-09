@@ -1,0 +1,150 @@
+1. MAC Address Flapping
+Scenario
+
+Users report intermittent connectivity.
+
+Logs show:
+
+MAC address xxxx flapping between Gi0/1 and Gi0/2
+What would you investigate?
+Layer 2 loop
+Incorrect cabling
+Unmanaged switch connected by user
+STP issues
+EtherChannel misconfiguration
+🔥 2. Broadcast Storm
+Scenario
+
+Suddenly:
+
+Switch CPU spikes
+Network becomes very slow
+Excessive broadcast traffic
+What would you check?
+STP status
+Recent changes
+Loops
+Storm-control configuration
+Interface utilization
+🔥 3. STP Root Bridge Changed
+Scenario
+
+After maintenance, traffic paths changed and latency increased.
+
+What would you check?
+Current root bridge
+STP priorities
+Newly added switches
+Root guard events
+
+Commands:
+
+show spanning-tree
+🔥 4. EtherChannel Not Forming
+Scenario
+
+Four links configured but Port-Channel remains down.
+
+What would you verify?
+Speed
+Duplex
+Trunk/access mode
+Native VLAN
+Allowed VLANs
+LACP/PAgP mode
+STP inconsistencies
+🔥 5. Users on Same VLAN Cannot Communicate Across Switches
+Scenario
+
+PCs are in the same VLAN but cannot reach each other.
+
+What would you check?
+VLAN existence
+Trunk status
+Allowed VLAN list
+STP blocking
+MAC learning
+
+Commands:
+
+show vlan brief
+show interfaces trunk
+show mac address-table
+🔥 6. Access Port Goes Err-Disabled
+Scenario
+
+A user plugs in a device and the port immediately shuts down.
+
+What would you investigate?
+BPDU Guard
+Port Security violation
+Storm Control action shutdown
+UDLD violation
+
+Commands:
+
+show interface status err-disabled
+🔥 7. One-Way Traffic Between Switches
+Scenario
+
+Traffic works in one direction but not the other.
+
+Common on fiber links.
+
+What would you check?
+UDLD status
+Fiber Tx/Rx issues
+Interface errors
+Optics health
+
+Commands:
+
+show udld
+show interfaces counters errors
+🎯 Interviewer's Expected Troubleshooting Flow
+
+For almost any Layer 2 issue:
+
+Step 1
+
+Check physical layer
+
+show interfaces status
+Step 2
+
+Check VLAN / Trunk
+
+show vlan brief
+show interfaces trunk
+Step 3
+
+Check STP
+
+show spanning-tree
+Step 4
+
+Check MAC learning
+
+show mac address-table
+Step 5
+
+Check EtherChannel
+
+show etherchannel summary
+Step 6
+
+Check Security Features
+
+BPDU Guard
+Port Security
+DHCP Snooping
+Storm Control
+UDLD
+🚀 Most Asked Layer 2 Topics in Interviews
+STP Loop / Root Bridge
+MAC Flapping
+EtherChannel Issues
+Broadcast Storms
+BPDU Guard
+Port Security
+DHCP Snooping
