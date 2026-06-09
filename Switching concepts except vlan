@@ -1,0 +1,53 @@
+1️⃣ STP Loop Scenario
+
+A user reports network slowness. You notice high CPU on switches and MAC addresses constantly moving between ports. What would you suspect and how would you investigate?
+
+2️⃣ Root Bridge Change
+
+After a maintenance window, traffic paths have changed and some applications are slower. How would you determine whether the STP root bridge has changed?
+
+3️⃣ BPDU Guard Incident
+
+An access port suddenly goes into err-disabled state after a new device is connected. What could have happened?
+
+4️⃣ EtherChannel Not Forming
+
+Two switches are connected with four links configured for EtherChannel, but the Port-Channel remains down. What would you check?
+
+5️⃣ Uneven EtherChannel Traffic
+
+A Port-Channel has four active links, but traffic seems to use only one physical link. Is this necessarily a problem? What would you verify?
+
+6️⃣ STP Blocking Decision
+
+Two switches are connected using two parallel links. One link is forwarding and one is blocked. How does STP decide which port gets blocked?
+
+7️⃣ Broadcast Storm
+
+A switch receives excessive broadcast traffic and users complain of intermittent connectivity. What Layer 2 mechanisms can help protect the network?
+
+8️⃣ Port Security Violation
+
+A user plugs a small unmanaged switch into a wall port and several devices connect through it. Shortly afterward the port stops working. What Layer 2 feature may have caused this?
+
+9️⃣ DHCP Snooping Scenario
+
+Users suddenly start receiving incorrect IP addresses after someone connects a wireless router to the network. Which Layer 2 security feature would help prevent this?
+
+🔟 Unidirectional Link Failure
+
+A fiber link between two switches develops a problem where traffic can pass in one direction but not the other. What Layer 2 protection feature can detect this condition?
+
+🎯 Most Important Topics Behind These Questions
+STP & Root Bridge Election
+BPDU Guard
+EtherChannel
+EtherChannel Hashing
+Broadcast Storm Control
+Port Security
+DHCP Snooping
+UDLD
+MAC Address Table Learning
+Layer 2 Loop Troubleshooting
+
+These 10 questions are very close to what you'd encounter in Oracle, Cisco TAC, HPE, Juniper, or data-center network engineer interviews.
